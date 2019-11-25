@@ -7,7 +7,7 @@ Given a list of N people and the above operation, find a way to identify the cel
 """
 import numpy as np
 n=4
-relationships=np.array([[1,1,0,0,],[0,1,0,0],[0,1,1,1],[1,1,1,1]])
+relationships=np.array([[1,1,0,0,],[0,1,0,0],[0,1,1,1],[1,1,1,0]])
 def knows(a,b):
     assert a<n and b<n,"Undefined person id"
     return relationships[a,b]    
