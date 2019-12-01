@@ -82,17 +82,5 @@ students2 = {0: [3],1: [2],
 2: [1, 3, 4],3: [0, 2, 4, 5],
 4: [2, 3],5: [3]}
 
-import time
-times=[]
-
-for t in range(10,1000,10):
-	s=2*t
-	students3={i:[j for j in range(s+1) if (i<s//2+1 and j>s//2) or (i>s//2 and j<s//2+1)] for i in range(s+1)}
-	start=time.time()
-	result=getGroups(students3)
-	times.append(time.time()-start)
-	print(t)
-x=[10*i for i in range(1,100)]
-import matplotlib.pyplot as plt
-plt.plot(x,times)
-plt.show()
+print(getGroups(students1))
+print(getGroups(students2))
