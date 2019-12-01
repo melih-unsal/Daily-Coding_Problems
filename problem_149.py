@@ -1,4 +1,5 @@
 """
+PROBLEM 149 HARD
 This problem was asked by Goldman Sachs.
 
 Given a list of numbers L, implement a method sum(i, j) which returns the sum from the sublist L[i:j] (including i, excluding j).
